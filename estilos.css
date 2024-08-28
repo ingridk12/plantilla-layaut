@@ -1,0 +1,45 @@
+:root{
+    --color-blue: #92e0ea;
+    --color-rosa: #ea92db;
+    --color-verde: #d4ea92;
+    --color-amarillo: #eae492;
+}
+
+.parent{
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    text-align: center;
+}
+
+header{
+    padding: 2rem;
+    grid-column: 1 / 4;
+    background: var(--color-rosa);
+}
+
+.barraIzquierdaAzul{
+    grid-column: 1 / 2;
+    background: var(--color-blue);
+    padding: 2rem;
+    width: 300px;
+    height: 600px;
+}
+
+main{
+    grid-column: 2 / 3;
+    background: var(--color-verde);
+    padding: 2rem;
+}
+
+.barraDerechaAmarila{
+    grid-column: 3 / 4;
+    background: var(--color-amarillo);
+    padding: 2rem;
+    width: 300px;
+}
+
+footer{
+    grid-column: 1 / 4;
+    background: var(--color-rosa);
+    padding: 2rem;
+}
